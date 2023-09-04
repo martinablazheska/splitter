@@ -1,0 +1,46 @@
+@import "../../../../color-pallete.css";
+
+.input-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+label {
+  color: var(--grayish-cyan);
+  font-size: 1rem;
+  display: inline;
+}
+
+input {
+  background-color: var(--very-light-grayish-cyan);
+  font-family: "Space Mono", monospace;
+  color: var(--very-dark-cyan);
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: right;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position-x: 15px;
+  background-position-y: center;
+}
+
+input:focus {
+  border: none;
+  outline: 2px solid var(--strong-cyan);
+}
+
+.amount {
+  background-image: url("../../../../assets/images/icon-dollar.svg");
+}
+
+.persons {
+  background-image: url("../../../../assets/images/icon-person.svg");
+}

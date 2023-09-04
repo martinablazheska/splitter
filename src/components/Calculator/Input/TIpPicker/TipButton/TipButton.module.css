@@ -1,0 +1,31 @@
+@import "../../../../../color-pallete.css";
+
+.tip-button input {
+  display: none;
+}
+
+.tip-button input:hover {
+  cursor: pointer;
+}
+
+.tip-button label {
+  border: none;
+  border-radius: 10px;
+  background: var(--very-dark-cyan);
+  color: var(--very-light-grayish-cyan);
+  width: 80%;
+  height: 50px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tip-button label:hover {
+  cursor: pointer;
+}
+
+.tip-button input:checked + label {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}

@@ -1,0 +1,29 @@
+@import "../../../../color-pallete.css";
+
+.tip-picker {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin: 10px 0;
+}
+
+.custom-input {
+  width: 80%;
+  height: 50px;
+  outline: none;
+  border-radius: 10px;
+  background-color: var(--very-light-grayish-cyan);
+  font-size: 1.4rem;
+  color: var(--very-dark-cyan);
+  text-align: right;
+  margin: 0;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 1rem;
+  color: var(--grayish-cyan);
+}
