@@ -13,4 +13,5 @@
 
 .reset-button:hover {
   cursor: pointer;
+  background-color: var(--light-cyan);
 }

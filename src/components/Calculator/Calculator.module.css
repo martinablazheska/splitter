@@ -10,3 +10,14 @@
   padding: 10px;
   box-sizing: border-box;
 }
+
+@media (min-width: 400px) {
+  .calculator {
+    flex-direction: row;
+    width: 80%;
+    min-width: 400px;
+    max-width: 1000px;
+    height: 70%;
+    max-height: 900px;
+  }
+}

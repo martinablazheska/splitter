@@ -41,6 +41,5 @@ Users should be able to:
 
 ### Continued development
 
-- add desktop version
-- improve mobile version styles
 - improve state management by implementing the useReducer hook
+- add data validation and error states

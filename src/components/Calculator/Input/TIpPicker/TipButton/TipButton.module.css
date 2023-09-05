@@ -23,6 +23,7 @@
 
 .tip-button label:hover {
   cursor: pointer;
+  background-color: var(--light-cyan);
 }
 
 .tip-button input:checked + label {

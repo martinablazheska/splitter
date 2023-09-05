@@ -8,6 +8,7 @@ function InputField(props) {
   return (
     <div className={classes["input-field"]}>
       <label htmlFor={props.id}>{props.label}</label>
+
       <input
         type={props.type}
         className={classes[`${props.inputClass}`]}

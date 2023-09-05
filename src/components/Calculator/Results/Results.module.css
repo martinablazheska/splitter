@@ -14,3 +14,10 @@
   font-size: 1.2rem;
   padding: 30px;
 }
+
+@media (min-width: 400px) {
+  .results-container {
+    width: 50%;
+    height: 100%;
+  }
+}
