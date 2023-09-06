@@ -1,4 +1,5 @@
 import classes from "./InputFIeld.module.css";
+import Error from "./Error/Error";
 
 function InputField(props) {
   function onChange(event) {
@@ -7,7 +8,10 @@ function InputField(props) {
 
   return (
     <div className={classes["input-field"]}>
-      <label htmlFor={props.id}>{props.label}</label>
+      <div className={classes["label-container"]}>
+        <label htmlFor={props.id}>{props.label}</label>
+        {props.isInvalid && <Error>{props.errorMessage}</Error>}
+      </div>
 
       <input
         type={props.type}

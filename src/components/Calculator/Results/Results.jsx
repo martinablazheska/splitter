@@ -20,10 +20,17 @@ function Results() {
   }
 
   useEffect(() => {
-    setResults({
-      tipAmount: ((amount * (tip / 100)) / persons).toFixed(2),
-      totalAmount: ((amount * (tip / 100 + 1)) / persons).toFixed(2),
-    });
+    if (amount >= 0 && persons > 0) {
+      setResults({
+        tipAmount: ((amount * (tip / 100)) / persons).toFixed(2),
+        totalAmount: ((amount * (tip / 100 + 1)) / persons).toFixed(2),
+      });
+    } else {
+      setResults({
+        tipAmount: (0).toFixed(2),
+        totalAmount: (0).toFixed(2),
+      });
+    }
   }, [amount, tip, persons]);
 
   return (

@@ -28,6 +28,8 @@ function Input() {
         placeholder="0"
         value={amount}
         onChange={amountHandler}
+        isInvalid={amount < 0}
+        errorMessage={`Can't be negative`}
       />
       <TipPicker />
 
@@ -36,11 +38,13 @@ function Input() {
         id="persons"
         type="number"
         step="1"
-        min="1"
+        min="0"
         value={persons}
         inputClass="persons"
         placeholder="1"
         onChange={personsHandler}
+        isInvalid={persons < 1}
+        errorMessage={`Can't be zero`}
       />
     </div>
   );

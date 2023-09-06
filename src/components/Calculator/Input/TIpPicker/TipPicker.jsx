@@ -12,7 +12,11 @@ function TipPicker() {
   }
 
   function customTipHandler(event) {
-    setTip(event.target.value);
+    if (event.target.value >= 0) {
+      setTip(event.target.value);
+    } else {
+      setTip("0");
+    }
   }
 
   return (
