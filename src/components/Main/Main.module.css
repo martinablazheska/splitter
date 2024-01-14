@@ -1,5 +1,5 @@
 .main {
-  height: 88%;
+  height: calc(100dvh - 100px);
   width: 100%;
 }
 
