@@ -30,6 +30,7 @@ input {
   background-size: 15px;
   background-position-x: 15px;
   background-position-y: center;
+  box-sizing: border-box;
 }
 
 .label-container {

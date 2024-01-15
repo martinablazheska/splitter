@@ -4,6 +4,7 @@
   justify-content: space-evenly;
   height: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 @media (min-width: 400px) {
